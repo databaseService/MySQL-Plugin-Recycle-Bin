@@ -834,6 +834,7 @@ Binlog_relay_IO_observer bdq_relay_io_observer = {
 
   bdq_io_start,	// start
   bdq_io_end,	// stop
+  NULL,
   NULL,     // stop sql thread
   NULL,	// request_transmit
   bdq_read_event,	// after_read_event
