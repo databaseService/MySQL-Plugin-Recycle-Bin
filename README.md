@@ -25,11 +25,11 @@ https://github.com/sunashe/MySQL-Plugin-Recycle-Bin/releases
 ```
 
 ### 3.2 源码编译
-可以通过下载源代码编译，源码编译依赖MySQL源代码，推荐使用5.7.18版本进行编译,其它数据库版本未测试。
+可以通过下载源代码编译，源码编译依赖MySQL源代码。
 ```sh
 git clone git@github.com:sunashe/MySQL-Plugin-Recycle-Bin.git
 cd MySQL-Plugin-Recycle-Bin
-git checkout 5.7.18
+git checkout 5.7.26  #版本号要和MySQL版本号一致
 cp -r MySQL-Plugin-Recycle-Bin  mysql_source_dir/plugin/
 cd mysql_source_dir
 cmake . -DBUILD_CONFIG=mysql_release -DDOWNLOAD_BOOST=1  -DWITH_BOOST=/usr/local/boost/
